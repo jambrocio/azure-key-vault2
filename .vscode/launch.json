@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-AzureKeyVault2Application<azure-key-vault2>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cotic.azure.keyvault.AzureKeyVault2Application",
+            "projectName": "azure-key-vault2",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

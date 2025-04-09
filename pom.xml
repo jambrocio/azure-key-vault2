@@ -27,12 +27,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<!--
 		<dependency>
     		<groupId>com.azure.spring</groupId>
     		<artifactId>spring-cloud-azure-starter-keyvault</artifactId>
 		</dependency>
-
+		-->
+		<dependency>
+			<groupId>com.azure.spring</groupId>
+			<artifactId>spring-cloud-azure-starter-keyvault-secrets</artifactId>
+		</dependency>
+	
 	</dependencies>
 
 	<dependencyManagement>

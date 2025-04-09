@@ -8,31 +8,19 @@ import com.azure.security.keyvault.secrets.SecretClient;
 @RestController
 public class Demo {
 
+    //@Value("${mes}")
+    //private String mes;
+
     // Spring Cloud Azure will automatically inject SecretClient in your ApplicationContext.
     private final SecretClient secretClient;
 
     public Demo(SecretClient secretClient) {
         this.secretClient = secretClient;
     }
-    /*
-    @GetMapping("signo")
-    public String signo() {
-        return secretClient.getSecret("signo").getValue();
-    }
-
-    @GetMapping("distrito")
-    public String distrito() {
-        return secretClient.getSecret("distrito").getValue();
-    }
-
-    @GetMapping("edad")
-    public String edad() {
-        return secretClient.getSecret("edad").getValue();
-    }
-    */
 
     @GetMapping("mes")
-    public String edad() {
+    public String mes() {
+        //System.out.println("mes: " + mes);
         return secretClient.getSecret("mes").getValue();
     }
 }
